@@ -1,0 +1,81 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+GlobalVirtualManager | worddojo.so
+t_i_l() | worddojo.so
+megaend() | worddojo.so
+u_m_m_s(char const*, char*, char*, unsigned int) | worddojo.so
+QueFlush(bool) | worddojo.so
+megastart(char const*, app_common::args_t*) | worddojo.so
+TextSystem::LoadTranslations(xml_gameinfo::GameIds) | worddojo.so
+WorldClass::AnimationFrames(Bitmap*) | worddojo.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | worddojo.so
+WorldClass::SetBack(char const*, int) | worddojo.so
+WorldClass::ShowAll() | worddojo.so
+WorldClass::GetFrame(Bitmap*, int) | worddojo.so
+WorldClass::DeleteBmp(Bitmap*, unsigned char) | worddojo.so
+WorldClass::NextFrame(unsigned char, unsigned char, bool, bool, bool, bool) | worddojo.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | worddojo.so
+WorldClass::WorldClass() | worddojo.so
+system_info::Get_Motherboard_Type() | worddojo.so
+VirtualManager::LoadDatFile() | worddojo.so
+HighScoresManager::LowestScore(int) | worddojo.so
+List::Push(Group*) | worddojo.so
+List::Clear(unsigned char) | worddojo.so
+List::List(List*) | worddojo.so
+Books::Credits(xml_gameinfo::GameIds, enums::Span) | worddojo.so
+Books::Instance() | worddojo.so
+Group::Signal(Group::SpriteSignalType) | worddojo.so
+Group::Signal(SpriteSignal*) | worddojo.so
+Group::Message(Group::SpriteSignalType) | worddojo.so
+Group::Message(SpriteSignal*) | worddojo.so
+USBIO::FoundUSB() | worddojo.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | worddojo.so
+Bitmap::GreyBmp() | worddojo.so
+EventO::GetType() | worddojo.so
+EventO::EventO() | worddojo.so
+EventO::~EventO() | worddojo.so
+Sprite::DoNextFrame() | worddojo.so
+Sprite::SpriteClick() | worddojo.so
+Sprite::AssignString(String*, unsigned long) | worddojo.so
+Sprite::ChangeString(char const*, unsigned long) | worddojo.so
+Sprite::ClicksEnabled | worddojo.so
+Sprite::LastEventTime() | worddojo.so
+Sprite::DeleteAfterLast(unsigned long) | worddojo.so
+Sprite::EnableAllClicks(unsigned long) | worddojo.so
+Sprite::DisableAllClicks(unsigned long) | worddojo.so
+Sprite::CreateTextDropShadow(float, float, unsigned long, int, int, int) | worddojo.so
+Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | worddojo.so
+Sprite::Move(float, float, float, float, float, float, unsigned long, unsigned long, unsigned char) | worddojo.so
+Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | worddojo.so
+Sprite::Reset() | worddojo.so
+Sprite::DoDraw() | worddojo.so
+Sprite::Enable(unsigned long) | worddojo.so
+Sprite::FadeIn(unsigned long, unsigned long, int, int) | worddojo.so
+Sprite::SetBmp(Bitmap*, unsigned long) | worddojo.so
+Sprite::Signal(Group::SpriteSignalType) | worddojo.so
+Sprite::Signal(SpriteSignal*) | worddojo.so
+Sprite::Disable(unsigned long, bool) | worddojo.so
+Sprite::FadeOut(unsigned long, unsigned long, int, int) | worddojo.so
+Sprite::Message(Group::SpriteSignalType) | worddojo.so
+Sprite::Message(SpriteSignal*) | worddojo.so
+Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | worddojo.so
+Sprite::SetCord(float, float, float, unsigned long) | worddojo.so
+Sprite::SetSize(int, int) | worddojo.so
+Sprite::AddEvent(EventO*) | worddojo.so
+Sprite::SetAlpha(int, unsigned long) | worddojo.so
+Sprite::ChangeBmp(Bitmap*, unsigned long) | worddojo.so
+Sprite::DoCommand(int) | worddojo.so
+Sprite::PlaySound(char*, int, unsigned long) | worddojo.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | worddojo.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | worddojo.so
+Sprite::~Sprite() | worddojo.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | worddojo.so
+typeinfo for EventO | worddojo.so
+typeinfo for Sprite | worddojo.so
+vtable for DOSLinuxWorld | worddojo.so
+clear_bitmap | worddojo.so
+gfx_driver | worddojo.so
+screen | worddojo.so
+set_mouse_sprite | worddojo.so
