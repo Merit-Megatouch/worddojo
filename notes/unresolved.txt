@@ -7,5 +7,4 @@ t_i_l() | worddojo.so
 megaend() | worddojo.so
 megastart(char const*, app_common::args_t*) | worddojo.so
 VirtualManager::LoadDatFile() | worddojo.so
-HighScoresManager::LowestScore(int) | worddojo.so
 USBIO::FoundUSB() | worddojo.so
